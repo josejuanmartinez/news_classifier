@@ -1,4 +1,5 @@
 import os
+import sys
 
 from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier, AdaBoostClassifier
 from sklearn.metrics import accuracy_score
@@ -9,31 +10,33 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import LinearSVC
 from sklearn.linear_model import SGDClassifier
 
+from ClassifierLogger import ClassifierLogger
 from FeatureManager import FeatureManager
-
+from itertools import chain, combinations
 
 class Classifier:
-
-    def __init__(self, feat_manager, algo="NB"):
-        self.feat_manager = feat_manager
-        self.algo = algo
-
-    def get_classifier(self):
-        if self.algo == "GBT":
+    def __init__(self, feature_manager, algo_list, logger):
+        self.logger = logger
+        self.data = feature_manager.data
+        self.feature_manager = feature_manager
+        self.algo_list = algo_list
+        
+    def get_classifier(self, algo):
+        if algo == "Gradient Boost":
             return GradientBoostingClassifier()
-        elif self.algo == "RF":
-            return  RandomForestClassifier()
-        elif self.algo == "ADB":
+        elif algo == "Random Forest":
+            return RandomForestClassifier()
+        elif algo == "Adaboost":
             return AdaBoostClassifier()
-        elif self.algo == "DT":
+        elif algo == "Decision Tree":
             return  DecisionTreeClassifier()
-        elif self.algo == "NB":
+        elif algo == "Naive Bayes":
             return  BernoulliNB()
-        elif self.algo == "SGD":
+        elif algo == "Gradient Descent":
             return  SGDClassifier()
-        elif self.algo == "SVC":
+        elif algo == "Support Vector Machine":
             return LinearSVC()
-        elif self.algo == "MLPC":
+        elif algo == "MLPC":
             return MLPClassifier(activation='logistic',  batch_size='auto',
             early_stopping=True, hidden_layer_sizes=(100,), learning_rate='adaptive',
             learning_rate_init=0.1, max_iter=5000, random_state=1,
@@ -41,77 +44,51 @@ class Classifier:
             warm_start=False)
         return 0
 
-    def train(self):
-        X = self.feat_manager.features
-        y_1 = self.feat_manager.data['category'].values.tolist()
+    def train(self, cleanse):
+        X = self.feature_manager.cleansed_features if cleanse else self.feature_manager.features
+        y_1 = self.data['category'].values.tolist()
 
         # Split dataset into training set and test set
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(X, y_1, test_size=0.3,
                                                             random_state=1)  # 70% training and 30% test
 
         # Instantiate Classifying Algorithm
-        self.clf = self.get_classifier()
+        for algo in self.algo_list:
+            self.clf = self.get_classifier(algo)
+            self.logger.info(algo)
+            self.logger.info("====")
+            self.logger.info("Training...")
+            clf = self.clf.fit(self.X_train, self.y_train)
+            self.logger.info("Trained!")
+            self.logger.info("Evaluating...")
+            self.evaluate(clf)
+            self.logger.info("Evaluated!")
 
-        print("Training...")
-        self.clf = self.clf.fit(self.X_train, self.y_train)
-        print("Trained!")
-
-    def evaluate(self):
+    def evaluate(self, clf):
         # Predict the response for test dataset
-        y_pred = self.clf.predict(self.X_test)
-        print("Evaluating...")
-        print("-> Predicted: {}".format(y_pred))
-        print("-> Correct: {}".format(self.y_test))
-        print("-> Accuracy: {}".format(accuracy_score(self.y_test, y_pred)))
-        print("Evaluated!")
+        y_pred = clf.predict(self.X_test)
+        self.logger.info("-> Predicted: {}".format(y_pred))
+        self.logger.info("-> Correct: {}".format(self.y_test))
+        self.logger.info("-> Accuracy: {}".format(accuracy_score(self.y_test, y_pred)))
 
 
 if __name__ == "__main__":
+    logger = ClassifierLogger().get_logger()
     dir_path = os.path.dirname(os.path.realpath(__file__))
     corpus = os.path.join(dir_path, "resources", "News_category_train.json")
-    feat_manager = FeatureManager(corpus)
-    print("NAIVE BAYES")
-    print("===========")
-    classifierNB = Classifier(feat_manager, "NB")
-    classifierNB.train()
-    classifierNB.evaluate()
-    print("")
-    print("DECISION TREES")
-    print("===========")
-    classifierDT = Classifier(feat_manager, "DT")
-    classifierDT.train()
-    classifierDT.evaluate()
-    print("")
-    print("ADABOOST")
-    print("===========")
-    classifierADB = Classifier(feat_manager, "ADB")
-    classifierDT.train()
-    classifierDT.evaluate()
-    print("")
-    print("SUPPORT VECTOR MACHINE")
-    print("===========")
-    classifierRF = Classifier(feat_manager, "SVC")
-    classifierRF.train()
-    classifierRF.evaluate()
-    print("")
-    print("RANDOM FORESTS")
-    print("===========")
-    classifierRF = Classifier(feat_manager, "RF")
-    classifierRF.train()
-    classifierRF.evaluate()
-    print("")
-    print("STOCHASTIC GRADIENT DESCENT")
-    print("===========")
-    classifierRF = Classifier(feat_manager, "SGD")
-    classifierRF.train()
-    classifierRF.evaluate()
-    """print("")
-    print("GRADIENT BOOST")
-    print("===========")
-    classifierGBT = Classifier(feat_manager, "GBT")
-    classifierGBT.train()
-    classifierGBT.evaluate()
-    """
+
+    features = ['authors', 'headline', 'short_description']
+    combinations = chain(*map(lambda x: combinations(features, x), range(0, len(features) + 1)))
+
+    for combination in combinations:
+        if len(combination) == 0:
+            continue
+        feat_manager = FeatureManager(corpus, combination, logger)
+        # classifierNB = Classifier(feat_manager, ["Naive Bayes", "Decision Tree", "Adaboost", "Support Vector Machine", "Random Forest", "Gradient Descent"])
+        classifierNB = Classifier(feat_manager, ["Support Vector Machine", "Gradient Descent"] ,logger)
+        # self.logger.info("TRAINING WITHOUT CLEANSING")
+        # classifierNB.train(cleanse=False)
+        classifierNB.train(cleanse=True)
 
 
 
