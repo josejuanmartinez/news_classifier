@@ -1,6 +1,9 @@
 # KAGGLE NEWS CLASSIFIER
 A Huffpost (from KAGGLE) News Classifier using different statistical and neural algorithms
 
+
+![Kaggle Huffpost News Classifier Example](https://drive.google.com/uc?export=view&id=1pyGbFRoVmDagmbvCJpngj-ZBjJLe_04w "Kaggle Huffpost News example")
+
 Note: Doc2Vec models ARE NOT IN THIS REPOSITORY, download them from https://github.com/jhlau/doc2vec and install them in /embeddings folder
 
 Example:
