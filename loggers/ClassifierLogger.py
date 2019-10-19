@@ -1,10 +1,9 @@
 import logging
-import sys
 
 
 class ClassifierLogger:
     def __init__(self):
-        logging.basicConfig(level=logging.INFO)
+        logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(levelname)-8s %(message)s")
         file_handler = logging.FileHandler(filename='Classifier.log')
         #stdout_handler = logging.StreamHandler(sys.stdout)
 
