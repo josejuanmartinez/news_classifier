@@ -69,7 +69,7 @@ class Classifier:
 
         # Split dataset into training set and test set
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(X, y_1, test_size=TEST_SIZE,
-                                                            random_state=1)
+                                                            random_state=2)
 
         # Instantiate Classifying Algorithm
         for algo in self.algo_list:
