@@ -160,9 +160,10 @@ if __name__ == "__main__":
             continue
         feat_manager = FeatureManager(data, combination, logger, CLEANSE, embeddings)
 
-        # Best models are SVM and SGD
-        classifierNB = Classifier(feat_manager, ALGORITHMS, logger)
+        if feat_manager.features is None:
+            continue
 
+        classifierNB = Classifier(feat_manager, ALGORITHMS, logger)
         classifierNB.train()
 
 

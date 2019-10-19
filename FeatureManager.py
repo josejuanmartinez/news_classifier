@@ -1,6 +1,3 @@
-import pandas as pd
-from nltk import word_tokenize
-
 from scipy import sparse
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 
@@ -33,14 +30,10 @@ class FeatureManager:
             X = sparse.hstack((X, feature))
         return X
 
-    def print_features(self, feature):
-        print(pd.DataFrame(feature.toarray(), columns=feature.get_feature_names()))
-
     def create_features(self, data, combination, embeddings):
         features_tfidf = []
         for feature in combination:
             self.logger.info("Processing feature {}".format(feature))
-
             if feature == 'd2v':
                 if embeddings is not None:
                     features_tfidf.append(embeddings)
@@ -55,4 +48,7 @@ class FeatureManager:
                 X_train_tfidf = tfidf_transformer.fit_transform(X_train_counts)
                 features_tfidf.append(X_train_tfidf)
 
-        return self.stack_features(features_tfidf)
+        if len(features_tfidf) == 0:
+            return None
+        else:
+            return self.stack_features(features_tfidf)
