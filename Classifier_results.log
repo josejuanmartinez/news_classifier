@@ -1,0 +1,1709 @@
+Loading embeddings...
+loading Doc2Vec object from /Users/josejuan.martinez/PycharmProjects/Classifier/embeddings/enwiki_dbow/doc2vec.bin
+Model saved using code from earlier Gensim Version. Re-loading old model in a compatible way.
+loading Doc2Vec object from /Users/josejuan.martinez/PycharmProjects/Classifier/embeddings/enwiki_dbow/doc2vec.bin
+loading docvecs recursively from /Users/josejuan.martinez/PycharmProjects/Classifier/embeddings/enwiki_dbow/doc2vec.bin.docvecs.* with mmap=None
+loading syn1neg from /Users/josejuan.martinez/PycharmProjects/Classifier/embeddings/enwiki_dbow/doc2vec.bin.syn1neg.npy with mmap=None
+loading syn0 from /Users/josejuan.martinez/PycharmProjects/Classifier/embeddings/enwiki_dbow/doc2vec.bin.syn0.npy with mmap=None
+setting ignored attribute syn0norm to None
+setting ignored attribute cum_table to None
+loaded /Users/josejuan.martinez/PycharmProjects/Classifier/embeddings/enwiki_dbow/doc2vec.bin
+Creating d2v feature sparse matrix
+Processed 0 rows
+Processed 1000 rows
+Processed 2000 rows
+Processed 3000 rows
+Processed 4000 rows
+Processed 5000 rows
+Processed 6000 rows
+Processed 7000 rows
+Processed 8000 rows
+Processed 9000 rows
+Processed 10000 rows
+Processed 11000 rows
+Processed 12000 rows
+Processed 13000 rows
+Processed 14000 rows
+Processed 15000 rows
+Processed 16000 rows
+Processed 17000 rows
+Processed 18000 rows
+Processed 19000 rows
+Processed 20000 rows
+Processed 21000 rows
+Processed 22000 rows
+Processed 23000 rows
+Processed 24000 rows
+Processed 25000 rows
+Processed 26000 rows
+Processed 27000 rows
+Processed 28000 rows
+Processed 29000 rows
+Processed 30000 rows
+Processed 31000 rows
+Processed 32000 rows
+Processed 33000 rows
+Processed 34000 rows
+Processed 35000 rows
+Processed 36000 rows
+Processed 37000 rows
+Processed 38000 rows
+Processed 39000 rows
+Processed 40000 rows
+Processed 41000 rows
+Processed 42000 rows
+Processed 43000 rows
+Processed 44000 rows
+Processed 45000 rows
+Processed 46000 rows
+Processed 47000 rows
+Processed 48000 rows
+Processed 49000 rows
+Processed 50000 rows
+Processed 51000 rows
+Processed 52000 rows
+Processed 53000 rows
+Processed 54000 rows
+Processed 55000 rows
+Processed 56000 rows
+Processed 57000 rows
+Processed 58000 rows
+Processed 59000 rows
+Processed 60000 rows
+Processed 61000 rows
+Processed 62000 rows
+Processed 63000 rows
+Processed 64000 rows
+Finished. Rows: 65000
+Cleasing active? True
+Embeddings active? True
+PREPARING FEATURES ('d2v',)
+***********************
+Processing feature d2v
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['J' 'E' 'D' ... 'F' 'I' 'E']
+-> Accuracy: 0.16135384615384615
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['I' 'G' 'G' ... 'D' 'G' 'J']
+-> Accuracy: 0.22504615384615384
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'G' 'G' ... 'G' 'G' 'G']
+-> Accuracy: 0.3352
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'G' 'G' ... 'G' 'G' 'J']
+-> Accuracy: 0.3540307692307692
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'G' 'J' ... 'B' 'G' 'E']
+-> Accuracy: 0.2931692307692308
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'G' 'G' ... 'D' 'C' 'J']
+-> Accuracy: 0.2947076923076923
+Evaluated!
+PREPARING FEATURES ('link',)
+***********************
+Processing feature link
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'D' 'G']
+-> Accuracy: 0.5693538461538461
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'D' 'D' ... 'D' 'D' 'E']
+-> Accuracy: 0.5862153846153846
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'G' 'J' 'F']
+-> Accuracy: 0.5125538461538461
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.7379692307692308
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'D' 'G' ... 'D' 'D' 'J']
+-> Accuracy: 0.6624615384615384
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.7088615384615384
+Evaluated!
+PREPARING FEATURES ('authors',)
+***********************
+Processing feature authors
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'G' 'G' ... 'D' 'F' 'E']
+-> Accuracy: 0.6110769230769231
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['E' 'E' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.6741538461538461
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'G' 'G' ... 'D' 'G' 'J']
+-> Accuracy: 0.5098461538461538
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['E' 'E' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.688123076923077
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['E' 'E' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.6807384615384615
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['J' 'J' 'B' ... 'D' 'J' 'E']
+-> Accuracy: 0.6593230769230769
+Evaluated!
+PREPARING FEATURES ('headline',)
+***********************
+Processing feature headline
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'D' ... 'D' 'D' 'G']
+-> Accuracy: 0.6766769230769231
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'D' ... 'G' 'D' 'E']
+-> Accuracy: 0.6054153846153846
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'G' 'G' ... 'G' 'G' 'G']
+-> Accuracy: 0.5678769230769231
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'D' 'J']
+-> Accuracy: 0.7769230769230769
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'D' ... 'D' 'D' 'J']
+-> Accuracy: 0.6586461538461539
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'D' ... 'D' 'D' 'J']
+-> Accuracy: 0.7521230769230769
+Evaluated!
+PREPARING FEATURES ('short_description',)
+***********************
+Processing feature short_description
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'G' 'G' 'J']
+-> Accuracy: 0.579076923076923
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'B' ... 'J' 'G' 'J']
+-> Accuracy: 0.4572307692307692
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'J' 'G' 'J']
+-> Accuracy: 0.5035076923076923
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'G' 'J']
+-> Accuracy: 0.6471384615384616
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'J' 'G' 'J']
+-> Accuracy: 0.5074461538461539
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['D' 'F' 'G' ... 'J' 'D' 'J']
+-> Accuracy: 0.6241230769230769
+Evaluated!
+PREPARING FEATURES ('d2v', 'link')
+***********************
+Processing feature d2v
+Processing feature link
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'E' 'D' ... 'F' 'G' 'E']
+-> Accuracy: 0.34707692307692306
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['I' 'F' 'G' ... 'D' 'F' 'C']
+-> Accuracy: 0.45464615384615387
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'E' 'G' ... 'G' 'J' 'F']
+-> Accuracy: 0.5083076923076923
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.7390153846153846
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['D' 'G' 'G' ... 'D' 'G' 'J']
+-> Accuracy: 0.3524923076923077
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'G']
+-> Accuracy: 0.6993230769230769
+Evaluated!
+PREPARING FEATURES ('d2v', 'authors')
+***********************
+Processing feature d2v
+Processing feature authors
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['F' 'E' 'D' ... 'F' 'I' 'E']
+-> Accuracy: 0.3220923076923077
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'J' 'D' ... 'I' 'J' 'E']
+-> Accuracy: 0.5166153846153846
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'G' 'G' ... 'D' 'G' 'J']
+-> Accuracy: 0.4987076923076923
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'E' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.7107076923076923
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'E' 'G' ... 'D' 'G' 'E']
+-> Accuracy: 0.40326153846153845
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['A' 'B' 'I' ... 'D' 'J' 'E']
+-> Accuracy: 0.6615384615384615
+Evaluated!
+PREPARING FEATURES ('d2v', 'headline')
+***********************
+Processing feature d2v
+Processing feature headline
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'E' 'D' ... 'D' 'G' 'E']
+-> Accuracy: 0.3659076923076923
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'F' 'C' 'G']
+-> Accuracy: 0.5307692307692308
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'G' 'G' ... 'G' 'G' 'G']
+-> Accuracy: 0.5678769230769231
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'D' 'J']
+-> Accuracy: 0.7735384615384615
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'E' 'G' ... 'D' 'D' 'G']
+-> Accuracy: 0.40313846153846156
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'D' 'G']
+-> Accuracy: 0.7452307692307693
+Evaluated!
+PREPARING FEATURES ('d2v', 'short_description')
+***********************
+Processing feature d2v
+Processing feature short_description
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'D' ... 'G' 'G' 'E']
+-> Accuracy: 0.35452307692307694
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['C' 'F' 'G' ... 'D' 'B' 'J']
+-> Accuracy: 0.3881230769230769
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'J' 'G' 'J']
+-> Accuracy: 0.5022769230769231
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'G' 'E']
+-> Accuracy: 0.6496
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'F' 'G' ... 'D' 'F' 'J']
+-> Accuracy: 0.34615384615384615
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'J' 'G' 'J']
+-> Accuracy: 0.637476923076923
+Evaluated!
+PREPARING FEATURES ('link', 'authors')
+***********************
+Processing feature link
+Processing feature authors
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'D' 'J']
+-> Accuracy: 0.6633846153846154
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'D' 'D' 'E']
+-> Accuracy: 0.700123076923077
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'G' 'J' 'E']
+-> Accuracy: 0.5496
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8439384615384615
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'J' 'G' ... 'D' 'D' 'E']
+-> Accuracy: 0.7651692307692308
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8348307692307693
+Evaluated!
+PREPARING FEATURES ('link', 'headline')
+***********************
+Processing feature link
+Processing feature headline
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'D' 'G']
+-> Accuracy: 0.6408615384615385
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'A' ... 'D' 'G' 'J']
+-> Accuracy: 0.6117538461538462
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'G' 'G' 'E']
+-> Accuracy: 0.5653538461538462
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'D' 'E']
+-> Accuracy: 0.7910153846153846
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'D' ... 'D' 'J' 'A']
+-> Accuracy: 0.6890461538461539
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'D' 'E']
+-> Accuracy: 0.7891692307692307
+Evaluated!
+PREPARING FEATURES ('link', 'short_description')
+***********************
+Processing feature link
+Processing feature short_description
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'G' 'J']
+-> Accuracy: 0.6248615384615385
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['D' 'F' 'G' ... 'G' 'D' 'F']
+-> Accuracy: 0.5541538461538461
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'G' 'J' 'J']
+-> Accuracy: 0.5289846153846154
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'J']
+-> Accuracy: 0.7825846153846154
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'G' 'D' 'J']
+-> Accuracy: 0.6376615384615385
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'J']
+-> Accuracy: 0.7852923076923077
+Evaluated!
+PREPARING FEATURES ('authors', 'headline')
+***********************
+Processing feature authors
+Processing feature headline
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.700123076923077
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'B' ... 'D' 'D' 'E']
+-> Accuracy: 0.7298461538461538
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'G' 'G' ... 'G' 'G' 'J']
+-> Accuracy: 0.6258461538461538
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8697846153846154
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'D' ... 'D' 'J' 'E']
+-> Accuracy: 0.781723076923077
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8574153846153846
+Evaluated!
+PREPARING FEATURES ('authors', 'short_description')
+***********************
+Processing feature authors
+Processing feature short_description
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'G' 'E']
+-> Accuracy: 0.6729846153846154
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.6316923076923077
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'G' 'G' ... 'G' 'G' 'J']
+-> Accuracy: 0.5636307692307693
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8123076923076923
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.6907692307692308
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8068307692307692
+Evaluated!
+PREPARING FEATURES ('headline', 'short_description')
+***********************
+Processing feature headline
+Processing feature short_description
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'G' 'J']
+-> Accuracy: 0.6965538461538462
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'A' ... 'J' 'B' 'E']
+-> Accuracy: 0.5842461538461539
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'J' 'G' 'J']
+-> Accuracy: 0.5804923076923076
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'D' 'J']
+-> Accuracy: 0.7911384615384616
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['D' 'F' 'D' ... 'D' 'D' 'J']
+-> Accuracy: 0.6348307692307692
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'D' 'J']
+-> Accuracy: 0.8020307692307692
+Evaluated!
+PREPARING FEATURES ('d2v', 'link', 'authors')
+***********************
+Processing feature d2v
+Processing feature link
+Processing feature authors
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'D' ... 'D' 'G' 'E']
+-> Accuracy: 0.4278153846153846
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'C' ... 'D' 'J' 'J']
+-> Accuracy: 0.5777230769230769
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'G' 'J' 'E']
+-> Accuracy: 0.5572923076923076
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8477538461538462
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'D' ... 'D' 'J' 'D']
+-> Accuracy: 0.4066461538461538
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8245538461538462
+Evaluated!
+PREPARING FEATURES ('d2v', 'link', 'headline')
+***********************
+Processing feature d2v
+Processing feature link
+Processing feature headline
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'D' ... 'D' 'G' 'E']
+-> Accuracy: 0.45821538461538464
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'F' 'G' ... 'G' 'D' 'E']
+-> Accuracy: 0.5375384615384615
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'G' 'G' 'E']
+-> Accuracy: 0.5512
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'D' 'E']
+-> Accuracy: 0.7923076923076923
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'F' 'D' ... 'D' 'G' 'G']
+-> Accuracy: 0.4113230769230769
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'D' 'J']
+-> Accuracy: 0.7772923076923077
+Evaluated!
+PREPARING FEATURES ('d2v', 'link', 'short_description')
+***********************
+Processing feature d2v
+Processing feature link
+Processing feature short_description
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'D' ... 'D' 'G' 'E']
+-> Accuracy: 0.4537846153846154
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['I' 'F' 'A' ... 'J' 'F' 'J']
+-> Accuracy: 0.4968
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'G' 'J' 'J']
+-> Accuracy: 0.5289846153846154
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'J']
+-> Accuracy: 0.7833230769230769
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'E' 'D' ... 'E' 'G' 'J']
+-> Accuracy: 0.3889846153846154
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'J']
+-> Accuracy: 0.7771076923076923
+Evaluated!
+PREPARING FEATURES ('d2v', 'authors', 'headline')
+***********************
+Processing feature d2v
+Processing feature authors
+Processing feature headline
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'D' ... 'D' 'G' 'E']
+-> Accuracy: 0.45126153846153844
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['I' 'F' 'I' ... 'D' 'G' 'E']
+-> Accuracy: 0.6519384615384616
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'G' 'G' ... 'G' 'G' 'J']
+-> Accuracy: 0.6246153846153846
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8686769230769231
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'F' 'D' ... 'I' 'G' 'E']
+-> Accuracy: 0.4500923076923077
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8500307692307693
+Evaluated!
+PREPARING FEATURES ('d2v', 'authors', 'short_description')
+***********************
+Processing feature d2v
+Processing feature authors
+Processing feature short_description
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'D' ... 'D' 'G' 'E']
+-> Accuracy: 0.44012307692307695
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'D' 'A' ... 'D' 'H' 'E']
+-> Accuracy: 0.5485538461538462
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'G' 'G' ... 'G' 'G' 'J']
+-> Accuracy: 0.5688
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8115076923076923
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['D' 'G' 'G' ... 'G' 'G' 'G']
+-> Accuracy: 0.40596923076923075
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8014769230769231
+Evaluated!
+PREPARING FEATURES ('d2v', 'headline', 'short_description')
+***********************
+Processing feature d2v
+Processing feature headline
+Processing feature short_description
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'D' ... 'D' 'G' 'E']
+-> Accuracy: 0.46566153846153846
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'F' 'G' ... 'D' 'H' 'E']
+-> Accuracy: 0.5352
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'J' 'G' 'J']
+-> Accuracy: 0.5804923076923076
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'D' 'J']
+-> Accuracy: 0.7948307692307692
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'F' 'G' ... 'D' 'F' 'E']
+-> Accuracy: 0.40713846153846156
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'D' 'E']
+-> Accuracy: 0.7912615384615385
+Evaluated!
+PREPARING FEATURES ('link', 'authors', 'headline')
+***********************
+Processing feature link
+Processing feature authors
+Processing feature headline
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'D' 'J']
+-> Accuracy: 0.6903384615384616
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'G' 'E']
+-> Accuracy: 0.7115692307692307
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'G' 'G' 'J']
+-> Accuracy: 0.6056
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.871323076923077
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.7715076923076923
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8681846153846153
+Evaluated!
+PREPARING FEATURES ('link', 'authors', 'short_description')
+***********************
+Processing feature link
+Processing feature authors
+Processing feature short_description
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'G' 'J']
+-> Accuracy: 0.6726153846153846
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['D' 'F' 'G' ... 'D' 'D' 'F']
+-> Accuracy: 0.664
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'G' 'J' 'J']
+-> Accuracy: 0.5531076923076923
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8651692307692308
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.7251076923076923
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8621538461538462
+Evaluated!
+PREPARING FEATURES ('link', 'headline', 'short_description')
+***********************
+Processing feature link
+Processing feature headline
+Processing feature short_description
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'G' 'J']
+-> Accuracy: 0.6657846153846154
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'D' ... 'D' 'G' 'E']
+-> Accuracy: 0.5895384615384616
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'G' 'G' 'J']
+-> Accuracy: 0.5496615384615384
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'D' 'E']
+-> Accuracy: 0.812923076923077
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'C' 'J' 'J']
+-> Accuracy: 0.660923076923077
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'D' 'J']
+-> Accuracy: 0.8181538461538461
+Evaluated!
+PREPARING FEATURES ('authors', 'headline', 'short_description')
+***********************
+Processing feature authors
+Processing feature headline
+Processing feature short_description
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'G' 'E']
+-> Accuracy: 0.7126153846153847
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'H' 'E']
+-> Accuracy: 0.6889846153846154
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'G' 'G' ... 'G' 'G' 'J']
+-> Accuracy: 0.6300923076923077
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8765538461538461
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'J' 'J']
+-> Accuracy: 0.7239384615384615
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8741538461538462
+Evaluated!
+PREPARING FEATURES ('d2v', 'link', 'authors', 'headline')
+***********************
+Processing feature d2v
+Processing feature link
+Processing feature authors
+Processing feature headline
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'D' ... 'D' 'G' 'E']
+-> Accuracy: 0.5274461538461539
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'A' ... 'D' 'G' 'E']
+-> Accuracy: 0.6304
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'G' 'G' 'E']
+-> Accuracy: 0.5804307692307692
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8723692307692308
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'E' 'G' ... 'G' 'G' 'G']
+-> Accuracy: 0.4606153846153846
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8668307692307692
+Evaluated!
+PREPARING FEATURES ('d2v', 'link', 'authors', 'short_description')
+***********************
+Processing feature d2v
+Processing feature link
+Processing feature authors
+Processing feature short_description
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'D' ... 'D' 'G' 'E']
+-> Accuracy: 0.5248615384615385
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'F' 'I' ... 'D' 'J' 'J']
+-> Accuracy: 0.6073846153846154
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'E' 'G' ... 'G' 'J' 'J']
+-> Accuracy: 0.5445538461538462
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.866276923076923
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'D' 'G' ... 'E' 'J' 'J']
+-> Accuracy: 0.42227692307692305
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8579692307692308
+Evaluated!
+PREPARING FEATURES ('d2v', 'link', 'headline', 'short_description')
+***********************
+Processing feature d2v
+Processing feature link
+Processing feature headline
+Processing feature short_description
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'D' ... 'D' 'G' 'J']
+-> Accuracy: 0.5367384615384615
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'F' 'C' ... 'D' 'G' 'E']
+-> Accuracy: 0.5427692307692308
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'G' 'G' 'J']
+-> Accuracy: 0.5496615384615384
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'D' 'E']
+-> Accuracy: 0.8123076923076923
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['I' 'F' 'G' ... 'G' 'G' 'G']
+-> Accuracy: 0.4394461538461538
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'D' 'J']
+-> Accuracy: 0.8127384615384615
+Evaluated!
+PREPARING FEATURES ('d2v', 'authors', 'headline', 'short_description')
+***********************
+Processing feature d2v
+Processing feature authors
+Processing feature headline
+Processing feature short_description
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'D' ... 'D' 'G' 'E']
+-> Accuracy: 0.536923076923077
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'F' 'D' ... 'D' 'H' 'E']
+-> Accuracy: 0.6347076923076923
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'G' 'G' ... 'G' 'G' 'J']
+-> Accuracy: 0.6313230769230769
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8740307692307693
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'F' 'G' ... 'G' 'G' 'J']
+-> Accuracy: 0.47384615384615386
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8715692307692308
+Evaluated!
+PREPARING FEATURES ('link', 'authors', 'headline', 'short_description')
+***********************
+Processing feature link
+Processing feature authors
+Processing feature headline
+Processing feature short_description
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'G' 'J']
+-> Accuracy: 0.6952
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'G' 'E']
+-> Accuracy: 0.6859692307692308
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'G' 'G' 'J']
+-> Accuracy: 0.5693538461538461
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8809230769230769
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'D' 'J']
+-> Accuracy: 0.7311384615384615
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8804923076923077
+Evaluated!
+PREPARING FEATURES ('d2v', 'link', 'authors', 'headline', 'short_description')
+***********************
+Processing feature d2v
+Processing feature link
+Processing feature authors
+Processing feature headline
+Processing feature short_description
+Naive Bayes
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'D' ... 'D' 'G' 'E']
+-> Accuracy: 0.5836923076923077
+Evaluated!
+Decision Tree
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['B' 'F' 'A' ... 'D' 'H' 'E']
+-> Accuracy: 0.6411692307692308
+Evaluated!
+Adaboost
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'D' 'G' ... 'G' 'G' 'J']
+-> Accuracy: 0.5692923076923077
+Evaluated!
+Support Vector Machine
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8816615384615385
+Evaluated!
+Random Forest
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['G' 'F' 'G' ... 'D' 'D' 'G']
+-> Accuracy: 0.4793846153846154
+Evaluated!
+Gradient Descent
+====
+Training...
+Trained!
+Evaluating...
+-> Predicted: ['H' 'F' 'G' ... 'D' 'J' 'E']
+-> Accuracy: 0.8765538461538461
+Evaluated!
